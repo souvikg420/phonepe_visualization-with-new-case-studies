@@ -1,63 +1,90 @@
-# phonepe_visualization-with-new-case-studies
- The dynamics of transactions, user engagement, and insurance-related data is crucial for improving services and targeting users effectively. This project aims to analyze and visualize aggregated values of payment categories, create maps for total values at state and district levels, and identify top-performing states, districts, and pin codes.
-The aim of this project is to develop a solution that extracts, transforms, and visualizes data from the Phonepe Pulse GitHub repository. The process involves:
-1. Decoding Transaction Dynamics on PhonePe
-Scenario
-PhonePe, a leading digital payments platform, has recently identified significant variations in transaction behavior across states, quarters, and payment categories. While some regions and transaction types demonstrate consistent growth, others show stagnation or decline. The leadership team seeks a deeper understanding of these patterns to drive targeted business strategies.
+# PhonePe Visualization with New Case Studies
 
+Analyze and visualize PhonePe Pulse data to uncover transaction, user engagement, and insurance trends—empowering strategic business decisions in the digital payments industry.
 
+## Project Overview
 
-2. Device Dominance and User Engagement Analysis
-Scenario
-PhonePe aims to enhance user engagement and improve app performance by understanding user preferences across different device brands. The data reveals the number of registered users and app opens, segmented by device brands, regions, and time periods. However, trends in device usage vary significantly across regions, and some devices are disproportionately underutilized despite high registration numbers.
+PhonePe is a leading digital payments platform in India. This project extracts, transforms, and visualizes data from the [PhonePe Pulse GitHub repository](https://github.com/PhonePe/pulse) to deliver insights on transaction dynamics, user activity, device preferences, and insurance growth.
 
-3. Insurance Penetration and Growth Potential Analysis
+## Key Features
 
-Scenario
-PhonePe has ventured into the insurance domain, providing users with options to secure various policies. With increasing transactions in this segment, the company seeks to analyze its growth trajectory and identify untapped opportunities for insurance adoption at the state level. This data will help prioritize regions for marketing efforts and partnerships with insurers.
+- **Transaction Dynamics:** Explore variations in transaction behavior across states, quarters, and payment categories using interactive charts and heatmaps.
+- **Device Dominance & User Engagement:** Analyze user registration and app opens by device brand.
+- **Insurance Penetration & Growth:** Visualize insurance transaction growth and identify high-potential markets.
+- **Market Expansion Analysis:** Evaluate state-level transaction patterns to guide strategic decisions.
+- **User Engagement & Growth:** Identify top regions by user registrations and app engagement.
+- **Insurance Engagement:** Pinpoint states and districts with highest insurance activity.
+- **Geographic Analysis:** Discover top-performing states, districts, and pin codes for transactions and registrations.
+- **Dashboard:** Interactive dashboard powered by Streamlit and Plotly for dynamic data exploration.
 
-4. Transaction Analysis for Market Expansion
-Scenario
-PhonePe operates in a highly competitive market, and understanding transaction dynamics at the state level is crucial for strategic decision-making. With a growing number of transactions across different regions, the company seeks to analyze its transaction data to identify trends, opportunities, and potential areas for expansion.
+## Tech Stack
 
-5. User Engagement and Growth Strategy
+- **Python** (data processing)
+- **Pandas** (data wrangling)
+- **MySQL** (database)
+- **Streamlit & Plotly** (dashboard visualization)
 
-Scenario
-PhonePe seeks to enhance its market position by analyzing user engagement across different states and districts. With a significant number of registered users and app opens, understanding user behavior can provide valuable insights for strategic decision-making and growth opportunities.
+## Scenarios Addressed
 
+1. **Decoding Transaction Dynamics:** Analyze variations in transaction behavior across states and payment categories.
+2. **Device Dominance and User Engagement:** Understand user preferences and app opens segmented by device brands.
+3. **Insurance Penetration Analysis:** Track insurance policy uptake and market growth.
+4. **Market Expansion:** Assess transaction volume/value at state and district levels.
+5. **User Engagement Strategy:** Map user registrations and app engagement across geographies.
+6. **Insurance Engagement:** Study insurance uptake and transaction patterns across regions.
+7. **Geographic Transaction Analysis:** Identify top states, districts, and pin codes for transaction activity.
+8. **User Registration Analysis:** Pinpoint regions with highest user registrations per year-quarter.
+9. **Insurance Transactions Analysis:** Locate regions with most insurance transactions.
 
+## Installation & Usage
 
-6. Insurance Engagement Analysis
-Scenario
-PhonePe aims to analyze insurance transactions across various states and districts to understand the uptake of insurance services among users. This analysis will provide insights into user behavior, market demand, and potential areas for growth in insurance offerings.
+### Prerequisites
 
+- Python 3.8+
+- MySQL Server
+- [PhonePe Pulse Data](https://github.com/PhonePe/pulse)
+- Streamlit
 
+### Setup Instructions
 
-7. Transaction Analysis Across States and Districts
-Scenario
-PhonePe is conducting an analysis of transaction data to identify the top-performing states, districts, and pin codes in terms of transaction volume and value. This analysis will help understand user engagement patterns and identify key areas for targeted marketing efforts..
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/souvikg420/phonepe_visualization-with-new-case-studies.git
+   ```
+2. **Clone the PhonePe Pulse dataset repository:**
+   ```bash
+   git clone https://github.com/PhonePe/pulse.git
+   ```
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Configure your MySQL database and import transformed data (see scripts for details).**
+5. **Run the Streamlit dashboard:**
+   ```bash
+   streamlit run dashboard/app.py
+   ```
 
-8. User Registration Analysis
-Scenario
-PhonePe aims to conduct an analysis of user registration data to identify the top states, districts, and pin codes from which the most users registered during a specific year-quarter combination. This analysis will provide insights into user engagement patterns and highlight potential growth areas.
+## Repository Structure
 
-9. Insurance Transactions Analysis
-Scenario
-PhonePe aims to analyze insurance transactions to identify the top states, districts, and pin codes where the most insurance transactions occurred during a specific year-quarter combination. This analysis will help in understanding user engagement in the insurance sector and informing strategic decisions.
+- `scripts/` – Data extraction and transformation scripts
+- `dashboard/` – Streamlit dashboard code
+- `README.md` – Project overview and documentation
 
+## Screenshots
 
-Data Extraction: Scripting to clone the repository and collect data.
+_Add dashboard screenshots here (recommended for better presentation)_
 
-Data Transformation: Using Python and Pandas to clean and structure the data.
+## Data Source
 
-Database Insertion: Storing transformed data in a MySQL database.
+- [PhonePe Pulse GitHub Repository](https://github.com/PhonePe/pulse)
 
-Dashboard Creation: Using Streamlit and Plotly to build an interactive dashboard.
+## Author
 
-Data Retrieval: Fetching data from the database to dynamically update the dashboard.
+**Souvik Ghosh**  
+[LinkedIn](https://www.linkedin.com/in/souvik-ghosh-83a548331)  
+**Domain:** Data Science
 
-NAME : Souvik Ghosh
+## License
 
-LinkedIn: https://www.linkedin.com/in/souvik-ghosh-83a548331
-
-DOMAIN : DATA SCIENCE
+MIT License (update if different)
